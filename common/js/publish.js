@@ -150,10 +150,10 @@ $('.hmbg_btn').on('click',function(e) {
   e.preventDefault();
   if($(this).hasClass('active')){
     $(this).removeClass('active');
-    $('.left_aside.forhmbg').removeClass('active')
+    $('.left_aside.forhmbg, .lnb_wrap').removeClass('active')
   }else{
     $(this).addClass('active');
-    $('.left_aside.forhmbg').addClass('active')
+    $('.left_aside.forhmbg, .lnb_wrap').addClass('active')
   }
 })
 
@@ -164,6 +164,7 @@ $(document).mouseup(function (e) {
   if (nonTarget.has(e.target).length === 0) {
       nonTarget.removeClass("active");
       $(".forhmbg").removeClass("active");
+      $(".lnb_wrap").removeClass("active");
   }
 });
 
@@ -185,7 +186,7 @@ $(document).mouseup(function (e) {
   }
 });
 
-$('.map_pin').on('click', function(e) {
+$('.').on('click', function(e) {
     $(this).addClass('selected');
     $('.bottom_aside.formap_pin').addClass('active')
 })
