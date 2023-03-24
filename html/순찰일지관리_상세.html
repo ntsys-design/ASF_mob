@@ -13,17 +13,29 @@
   <div class="wrapper">
     <header>
       <div class="container">
-        <a href="#">
-          <h1 class="hd_logo"><img src="../common/images/hd_logo.png" alt="헤더 로고"> <span> 환경보전협회</span></h1>
-        </a>
+        <ul class="hdr_menu">
+          <li class="hmbg_btn">
+            <div>
+              <span class="hmbg_t"></span>
+              <span class="hmbg_m"></span>
+              <span class="hmbg_b"></span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <a href="">
+                <img src="" alt="">
+              </a>
+            </div>
+          </li>
+        </ul>
+        <div>
+          <h1>
+            <a href=""></a>
+          </h1>
+        </div>
         <div class="nav_wrap">
-          <nav>
-            <ul class="gnb">
-              <li><a href="#" class="active">운영 관리</a></li>
-              <li><a href="#">ASF 관리</a></li>
-            </ul>
-          </nav>
-          <!-- 0308 my_info 추가 -->
+         <!-- 0308 my_info 추가 -->
           <div class="util">
             <a href="#">반갑습니다. 김길동님!
               <button>
@@ -43,69 +55,29 @@
         <!-- 0220 lnb 구조 수정 -->
         <ul class="lnb">
           <li>
-            <a href="./시설물정보_목록.html">
+            <a href="../html/시설물정보_main.html">
               <div>
                 <img src="../common/images/fclt_ico.png" alt="시설물 정보 아이콘">
+                <span>시설물 정보</span>
               </div>
-              시설물 정보
-            </a>
-          </li>
-          <li>
-            <a href="./순찰계획관리_목록.html">
-              <div>
-                <img src="../common/images/ptr_ico.png" alt="순찰 계획 관리 아이콘">
-              </div>
-              순찰 계획 관리
             </a>
           </li>
           <li class="on">
-            <a href="./순찰일지관리_목록.html">
+            <a href="../html/순찰일지관리_목록.html">
               <div>
                 <img src="../common/images/ptr_log_ico.png" alt="순찰 일지 관리 아이콘">
+                <span>순찰 일지 관리</span>
               </div>
-              순찰 일지 관리
             </a>
           </li>
           <li>
-            <a href="./유지보수작업관리_목록.html">
+            <a href="../html/유지보수작업관리_목록.html">
               <div>
                 <img src="../common/images/mt_ico.png" alt="유지보수 작업 관리 아이콘">
+                <span>유지보수 작업 관리</span>
               </div>
-              유지보수 작업 관리
             </a>
           </li>
-          <li>
-            <a href="./민원일지관리_목록.html">
-              <div>
-                <img src="../common/images/cp_log_ico.png" alt="민원 일지 관리 아이콘">
-              </div>
-              민원 일지 관리
-            </a>
-          </li>
-          <li>
-            <a href="./순찰일지통계.html">
-              <div>
-                <img src="../common/images/stat.png" alt="순찰 일지 통계 아이콘">
-              </div>
-              순찰 일지 통계
-            </a>
-          </li>
-          <!-- <li>
-            <a href="./유지보수작업통계.html">
-              <div>
-                <img src="../common/images/mt_st_ico.png" alt="유지보수 작업 통계 아이콘">
-              </div>
-              유지보수 작업 통계
-            </a>
-          </li>
-          <li>
-            <a href="./민원일지통계.html">
-              <div>
-                <img src="../common/images/cp_st_ico.png" alt="민원 일지 통계 아이콘">
-              </div>
-              민원 일지 통계
-            </a>
-          </li> -->
         </ul>
         <!-- //0220 lnb 구조 수정 -->
       </div>
@@ -126,7 +98,7 @@
 
           <div class="container">
             <div class="form_wrap com_wrap ptr_pl_regi">
-              <h3>순찰 일시</h3>
+              <h3 class="tbl_tit">순찰 일시</h3>
               <form action="" class="com_form">
                 <ul>
                   <li>
@@ -171,7 +143,7 @@
 
             </div>
             <div class="form_wrap com_wrap ptr_pl_regi">
-              <h3>순찰 계획 및 순찰 담당자</h3>
+              <h3 class="tbl_tit">순찰 계획 및 순찰 담당자</h3>
               <form action="" class="com_form">
                 <ul>
                   <li>
@@ -295,7 +267,6 @@
           <div class="regi_map">
             <div class="container">
               <div class="map">
-                <b>map</b>
               </div>
             </div>
           </div>

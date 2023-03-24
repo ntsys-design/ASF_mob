@@ -20,6 +20,7 @@ header {
   background: #4661dc;
   position: fixed;
   z-index: 9999;
+  box-shadow: 0 0 1px #000;
 
   &.miniver {
     background: rgba(70,97,220,0.8);
@@ -30,7 +31,7 @@ header {
     top: 1%;
     left: 1%;
     z-index: 9999;
-    box-shadow: 0 0 0 0 #000;
+    box-shadow: 0 0 1px #000;
 
     .container {
       padding: 5px;
@@ -119,7 +120,6 @@ header {
       font-size: 0.875em;
       font-weight: 600;
       color: #fff;
-      min-width: 178px;
 
       img {
         margin-right: 24px;
