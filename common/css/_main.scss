@@ -50,7 +50,7 @@
             border: 1px solid #dde1e4;
             width: 100%;
             border-radius: 4px;
-            padding: 12px 45px;
+            padding: 12px 42px;
             font-size: 16px;
 
             &:focus {
@@ -69,12 +69,12 @@
 
             &[type="text"] {
               background: url(../images/email_ico.png) no-repeat;
-              background-position: 16px center;
+              background-position: 14px center;
               border-radius: 4px 4px 0 0;
 
               &:focus {
                 background: url(../images/email_ico_on.png) no-repeat;
-                background-position: 16px center;
+                background-position: 14px center;
                 z-index: 5;
               }
             }
@@ -82,13 +82,13 @@
             &[type="password"] {
               margin-top: -1px;
               background: url(../images/password_ico.png) no-repeat;
-              background-position: 16px center;
+              background-position: 14px center;
               border-radius: 0 ;
               border-top: 1px solid transparent;
 
               &:focus {
                 background: url(../images/password_ico_on.png) no-repeat;
-                background-position: 16px center;
+                background-position: 14px center;
                 border-top: 1px solid #016FF3;
               }
             }
@@ -96,6 +96,7 @@
             &[type="button"] {
               border: 1px solid transparent ;
               font-size: 16px;
+              font-weight: 500;
               margin-top: 40px;
               cursor: pointer;
               background: #6D769F;
@@ -109,13 +110,13 @@
               background: url(../images/otp_ico.png) no-repeat;
               margin-top: -1px;
 
-                background-position: 16px center;
+                background-position: 14px center;
               border-radius:0 0 4px 4px;
               border-top: 1px solid transparent;
 
               &:focus {
                 background: url(../images/otp_ico_on.png) no-repeat;
-                background-position: 16px center;
+                background-position: 14px center;
                 border-top: 1px solid #016FF3;
                 
               }
