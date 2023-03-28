@@ -86,6 +86,9 @@ $(window).scroll(function () {
 
 
 // 탭
+$(document).ready(function() {
+  $('.tab_con').hide()
+  $('.tab_con').first().show()
 $('.tab_menu li').on('click',function(e){
   e.preventDefault()
   let idx=$(this).index()
@@ -93,10 +96,10 @@ $('.tab_menu li').on('click',function(e){
   $(this).addClass('on')
   $('.tab_con').stop().hide()
   $('.tab_con').eq(idx).stop().show()
-
-
 })
 
+  
+})
 //0217 수정
 //순찰일지관리_등록,유지보수작업관리_등록,민원일지관리_등록 임시저장 버튼 클릭 탭 이동
 $('.tab2_btn').click(function(){
@@ -145,8 +148,9 @@ if(sw){
 
 
 // header miniver
-
+//hmbg_btn
 $('.hmbg_btn').on('click',function(e) {
+  $('.m_menu_btn').removeClass('active');
   e.preventDefault();
   if($(this).hasClass('active')){
     $(this).removeClass('active');
@@ -160,10 +164,36 @@ $('.hmbg_btn').on('click',function(e) {
 // 외부영역 클릭 시 창 닫기
 $(document).mouseup(function (e) {
 	e.stopPropagation();
-  var nonTarget = $(".hmbg_btn");
+  var nonTarget = $(".forhmbg, .hmbg_btn");
   if (nonTarget.has(e.target).length === 0) {
       nonTarget.removeClass("active");
       $(".forhmbg").removeClass("active");
+      $(".hmbg_btn").removeClass("active");
+      $(".lnb_wrap").removeClass("active");
+  }
+});
+
+//m_menu_btn
+$('.m_menu_btn').on('click',function(e) {
+  $('.hmbg_btn').removeClass('active');
+  e.preventDefault();
+  if($(this).hasClass('active')){
+    $(this).removeClass('active');
+    $('.left_aside.form_menu, .lnb_wrap').removeClass('active')
+  }else{
+    $(this).addClass('active');
+    $('.left_aside.form_menu, .lnb_wrap').addClass('active')
+  }
+})
+
+// 외부영역 클릭 시 창 닫기
+$(document).mouseup(function (e) {
+	e.stopPropagation();
+  var nonTarget = $(".form_menu, .m_menu_btn");
+  if (nonTarget.has(e.target).length === 0) {
+      nonTarget.removeClass("active");
+      $(".form_menu").removeClass("active");
+      $(".m_menu_btn").removeClass("active");
       $(".lnb_wrap").removeClass("active");
   }
 });
@@ -179,14 +209,15 @@ $('.map_pin').on('click', function(e) {
 // 외부영역 클릭 시 검색창 닫기
 $(document).mouseup(function (e) {
 	e.stopPropagation();
-  var nonTarget = $(".formap_pin");
+  var nonTarget = $(".formap_pin, .baside_close");
   if (nonTarget.has(e.target).length === 0) {
       nonTarget.removeClass("active");
+      $(".formap_pin").removeClass("active");
       $(".map_pin").removeClass("selected");
   }
 });
 
-$('.').on('click', function(e) {
-    $(this).addClass('selected');
-    $('.bottom_aside.formap_pin').addClass('active')
+$('.baside_close').on('click', function(e) {
+    $(this).removeClass('selected');
+    $('.bottom_aside.formap_pin').removeClass('active')
 })
