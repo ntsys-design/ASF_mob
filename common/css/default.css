@@ -772,6 +772,7 @@ input:focus {
   background-position: 14px center;
   border-radius: 0;
   border-top: 1px solid transparent;
+  border-radius: 0 0 4px 4px;
 }
 .wrapper .input_wrap .login .loginform_wrap form input[type=password]:focus {
   background: url(../images/password_ico_on.png) no-repeat;
