@@ -408,20 +408,6 @@ header .container > ul li.hmbg_btn > div span {
   border-radius: 2px;
   background: #000;
 }
-header .container > ul li.hmbg_btn .hmbg_menu_btn > ul span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
-header .container > ul li.hmbg_btn .hmbg_menu_btn > ul span.hmbg_t {
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-header .container > ul li.hmbg_btn .hmbg_menu_btn > ul span.hmbg_m {
-  display: none;
-}
-header .container > ul li.hmbg_btn .hmbg_menu_btn > ul span.hmbg_b {
-  transform: translate(-50%, -50%) rotate(-45deg);
-}
 header .container > ul li.m_menu_btn div a {
   display: flex;
   width: 100%;

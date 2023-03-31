@@ -95,25 +95,6 @@ header {
             }
           }
 
-          .hmbg_menu_btn {
-            > ul {
-              span {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                
-                &.hmbg_t {
-                  transform: translate(-50%,-50%) rotate(45deg);
-                }
-                &.hmbg_m {
-                  display: none;
-                }
-                &.hmbg_b {
-                  transform: translate(-50%,-50%) rotate(-45deg);
-                }
-              }
-            }
-          }
         }
 
         /* m_menu_btn */
