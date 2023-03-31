@@ -154,10 +154,12 @@ $('.hmbg_btn').on('click',function(e) {
   e.preventDefault();
   if($(this).hasClass('active')){
     $(this).removeClass('active');
-    $('.left_aside.forhmbg, .lnb_wrap').removeClass('active')
+    $('.left_aside.forhmbg').removeClass('active')
+    $('.dimm').removeClass('active')
   }else{
     $(this).addClass('active');
-    $('.left_aside.forhmbg, .lnb_wrap').addClass('active')
+    $('.left_aside.forhmbg').addClass('active')
+    $('.dimm').addClass('active')
   }
 })
 
@@ -170,6 +172,7 @@ $(document).mouseup(function (e) {
       $(".forhmbg").removeClass("active");
       $(".hmbg_btn").removeClass("active");
       $(".lnb_wrap").removeClass("active");
+      $('.dimm').removeClass('active')
   }
 });
 

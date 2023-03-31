@@ -335,10 +335,10 @@ body {
 
 header {
   width: 100%;
-  height: 60px;
+  height: 56px;
   background: #4661dc;
   position: fixed;
-  z-index: 9999;
+  z-index: 4;
   box-shadow: 0 0 4px #000;
 }
 header.miniver {
@@ -349,7 +349,7 @@ header.miniver {
   position: fixed;
   top: 1%;
   left: 1%;
-  z-index: 9999;
+  z-index: 4;
   box-shadow: 0 0 1px #000;
 }
 header.miniver .container {
@@ -360,31 +360,26 @@ header .container {
   align-items: center;
   justify-content: space-between;
   gap: 0 5%;
-  padding: 0 calc(1% + 5px);
+  padding: 0 24px;
 }
 header .container > ul {
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 header .container > ul.hdr_menu {
   flex-shrink: 0;
-  width: 84px;
+  width: 42px;
 }
 header .container > ul li {
-  width: 45%;
-  padding-top: 45%;
+  width: 100%;
   position: relative;
   /* m_menu_btn */
 }
 header .container > ul li > div {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  border: 1px solid #fff;
-  border-radius: 50%;
 }
 header .container > ul li > div a {
   display: block;
@@ -407,6 +402,9 @@ header .container > ul li.hmbg_btn > div span {
   height: 3px;
   border-radius: 2px;
   background: #fff;
+}
+header .container > ul li.hmbg_btn.active {
+  z-index: 7;
 }
 header .container > ul li.hmbg_btn.active > div span {
   position: absolute;
@@ -2123,6 +2121,20 @@ aside {
   transition: all 0.3s;
 }
 
+.dimm {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  transition: all 0.2s;
+}
+.dimm.active {
+  left: 0;
+}
+
 .left_aside {
   background: #fff;
   top: 57px;
@@ -2130,8 +2142,17 @@ aside {
   border-radius: 5px;
   left: -100%;
 }
+.left_aside.forhmbg {
+  width: 81.1%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 0;
+  left: -81.1%;
+  z-index: 6;
+}
 .left_aside.active {
-  left: 1%;
+  left: 0;
 }
 .left_aside.form_menu > section {
   border: 1px solid #999;

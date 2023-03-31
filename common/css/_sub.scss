@@ -1425,6 +1425,19 @@ aside {
   z-index: 9999;
   transition: all 0.3s;
 }
+.dimm {
+  background: rgba(0,0,0,0.6);
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  transition: all 0.2s;
+  &.active {
+    left: 0;
+  }
+}
 .left_aside {
   background: #fff;
   top: 57px;
@@ -1432,8 +1445,18 @@ aside {
   border-radius: 5px;
   left: -100%;
 
+  &.forhmbg {
+    width: 81.1%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+    left: -81.1%;
+    z-index: 6;
+  }
+
   &.active {
-    left: 1%;
+    left: 0;
   }
 
   &.form_menu {
