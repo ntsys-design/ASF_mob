@@ -17,10 +17,15 @@ body {
 header {
   width: 100%;
   height: 56px;
-  background: #4661dc;
+  background: #fff;
   position: fixed;
+  top: 0;
   z-index: 4;
   box-shadow: 0 0 4px #000;
+  transition: all .2s;
+  &.active {
+    top: -100%;
+  }
 
   &.miniver {
     background: rgba(70,97,220,0.8);
@@ -86,13 +91,12 @@ header {
               width: 55%;
               height: 3px;
               border-radius: 2px;
-              background: #fff;
+              background: #000;
             }
           }
 
-          &.active {
-            z-index: 7;
-            > div {
+          .hmbg_menu_btn {
+            > ul {
               span {
                 position: absolute;
                 top: 50%;

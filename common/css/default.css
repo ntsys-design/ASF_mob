@@ -336,10 +336,15 @@ body {
 header {
   width: 100%;
   height: 56px;
-  background: #4661dc;
+  background: #fff;
   position: fixed;
+  top: 0;
   z-index: 4;
   box-shadow: 0 0 4px #000;
+  transition: all 0.2s;
+}
+header.active {
+  top: -100%;
 }
 header.miniver {
   background: rgba(70, 97, 220, 0.8);
@@ -401,23 +406,20 @@ header .container > ul li.hmbg_btn > div span {
   width: 55%;
   height: 3px;
   border-radius: 2px;
-  background: #fff;
+  background: #000;
 }
-header .container > ul li.hmbg_btn.active {
-  z-index: 7;
-}
-header .container > ul li.hmbg_btn.active > div span {
+header .container > ul li.hmbg_btn .hmbg_menu_btn > ul span {
   position: absolute;
   top: 50%;
   left: 50%;
 }
-header .container > ul li.hmbg_btn.active > div span.hmbg_t {
+header .container > ul li.hmbg_btn .hmbg_menu_btn > ul span.hmbg_t {
   transform: translate(-50%, -50%) rotate(45deg);
 }
-header .container > ul li.hmbg_btn.active > div span.hmbg_m {
+header .container > ul li.hmbg_btn .hmbg_menu_btn > ul span.hmbg_m {
   display: none;
 }
-header .container > ul li.hmbg_btn.active > div span.hmbg_b {
+header .container > ul li.hmbg_btn .hmbg_menu_btn > ul span.hmbg_b {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 header .container > ul li.m_menu_btn div a {
@@ -2150,6 +2152,34 @@ aside {
   border-radius: 0;
   left: -81.1%;
   z-index: 6;
+}
+.left_aside.forhmbg .hmbg_menu_btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.left_aside.forhmbg .hmbg_menu_btn > ul {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px 0;
+}
+.left_aside.forhmbg .hmbg_menu_btn > ul li {
+  width: 100%;
+  height: 100%;
+}
+.left_aside.forhmbg .hmbg_menu_btn > ul span {
+  display: block;
+  width: 55%;
+  height: 3px;
+  border-radius: 2px;
+  background: #000;
+}
+.left_aside.forhmbg .hmbg_menu_btn > ul span.hmbg_m {
+  display: none;
 }
 .left_aside.active {
   left: 0;
