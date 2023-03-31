@@ -1,14 +1,24 @@
 // 로그인
 .wrapper {
+  width: 100%;
+  height: 100%;
   &.main {
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     padding: 0 32px;
+    padding-top: 64px;
+  }
+  &.sub {
+    padding: 0 32px;
+    padding-top: 64px;
+    .info_wrap {
+      margin-bottom: 20px;
+      .imgwrap {
+        width: 66px;
+      }
+    }
   }
   .info_wrap {
-    padding-top: 64px;
     margin-bottom: 48px;
     .imgwrap {
       margin-bottom: 24px;
@@ -55,16 +65,16 @@
 
             &:focus {
               outline: none;
-              border: 1px solid #016FF3;
+              border: 1px solid #016ff3;
 
               &::placeholder {
-                color: #484B51;
+                color: #484b51;
               }
             }
 
             &::placeholder {
               font-weight: 500;
-              color: #AAB0B8;
+              color: #aab0b8;
             }
 
             &[type="text"] {
@@ -83,58 +93,55 @@
               margin-top: -1px;
               background: url(../images/password_ico.png) no-repeat;
               background-position: 14px center;
-              border-radius: 0 ;
+              border-radius: 0;
               border-top: 1px solid transparent;
               border-radius: 0 0 4px 4px;
 
               &:focus {
                 background: url(../images/password_ico_on.png) no-repeat;
                 background-position: 14px center;
-                border-top: 1px solid #016FF3;
+                border-top: 1px solid #016ff3;
               }
             }
 
             &[type="button"] {
-              border: 1px solid transparent ;
+              border: 1px solid transparent;
               font-size: 16px;
               font-weight: 500;
               margin-top: 40px;
               cursor: pointer;
-              background: #6D769F;
+              background: #6d769f;
               color: #fff;
               padding: 14px 45px;
             }
-            &#login_btn{
-              background: #4661DC;
+            &#login_btn {
+              background: #4661dc;
             }
-            &#otp{
+            &#otp {
               background: url(../images/otp_ico.png) no-repeat;
               margin-top: -1px;
 
-                background-position: 14px center;
-              border-radius:0 0 4px 4px;
+              background-position: 14px center;
+              border-radius: 0 0 4px 4px;
               border-top: 1px solid transparent;
 
               &:focus {
                 background: url(../images/otp_ico_on.png) no-repeat;
                 background-position: 14px center;
-                border-top: 1px solid #016FF3;
-                
+                border-top: 1px solid #016ff3;
               }
             }
-
           }
 
-          .email_box:not(:valid)~.close-icon {
+          .email_box:not(:valid) ~ .close-icon {
             display: none;
           }
 
-          .pw_box:not(:valid)~.close-icon {
+          .pw_box:not(:valid) ~ .close-icon {
             display: none;
           }
 
           button {
-
             display: inline-block;
             width: 16px;
             height: 16px;
@@ -149,9 +156,6 @@
             cursor: pointer;
             border-radius: 50%;
           }
-
-
-
         }
       }
     }
@@ -161,19 +165,17 @@
       text-align: right;
       font-size: 0.875em;
       font-weight: 500;
-      color: #484B51;
+      color: #484b51;
       opacity: 1;
-      span{
-        color: #FC1F53;
+      span {
+        color: #fc1f53;
         margin-left: 8px;
       }
-      &.tit{
+      &.tit {
         font-weight: 400;
         //margin-top: 40px;
-        color: #1D1F35;
+        color: #1d1f35;
         opacity: 0.6;
-
-
       }
     }
   }
@@ -188,61 +190,126 @@
 }
 
 // main
-.lnb_wrap{
-  .main_lnb_container{
+.lnb_wrap {
+  .main_lnb_container {
     max-width: 744px;
     margin: auto;
-    .lnb{
+    .lnb {
       padding-top: 94px;
       padding-bottom: 122px;
       grid-gap: 56px;
-      li{
-        a{
-          div{ width: 144px;
-          height: 144px;
+      li {
+        a {
+          div {
+            width: 144px;
+            height: 144px;
           }
         }
       }
     }
-
   }
 }
 
+//sub
 
+.errp_text {
+  .page_tit {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 140%;
+    margin-bottom: 16px;
+  }
+  .page_desc {
+    line-height: 150%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #696e76;
+    margin-bottom: 40px;
+    .blck {
+      font-weight: 500;
+      color: #1d1d1d;
+      margin-bottom: 16px;
+    }
+    ul {
+      li {
+        margin-bottom: 6px;
+        display: flex;
+        align-items: center;
+        gap: 0 8px;
+        &::before {
+          content : '';
+          display: inline-block;
+          width: 3px;
+          height: 3px;
+          background: #484b51;
+          border-radius: 50%;
 
+        }
+        &:last-child {
+          margin-bottom: unset;
+        }
+      }
+    }
+  }
+  .btn_list {
+    display: flex;
+    justify-content: center;
+    gap: 0 12px;
+  }
+}
 
+//button style
+.btn_1 {
+  color: #4661DC;
+  border: 1px solid #4661DC;
+  border-radius: 4px;
+  background: #fff;
+  width: 142px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  &.blue {
+    color: #fff;
+    background: #4661DC;
+    border-color: transparent;
+  }
+}
 
-  .wrapper{
-    .main_wrap{
-      width: 100%;
-      height: 100vh;
-      display: flex;
-      .lnb_wrap{
-        width: 10%;
-        min-width: 180px;
-        .container.main_lnb_container{
-          .lnb{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding: 20px 0;
-            grid-gap: unset;
-            li{
-              a{
-                div{
-                  width: 80px;height: 80px;
-                  img{
-                    width: 50px;height: 50px;
-                  }
+.wrapper {
+  .main_wrap {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    .lnb_wrap {
+      width: 10%;
+      min-width: 180px;
+      .container.main_lnb_container {
+        .lnb {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding: 20px 0;
+          grid-gap: unset;
+          li {
+            a {
+              div {
+                width: 80px;
+                height: 80px;
+                img {
+                  width: 50px;
+                  height: 50px;
                 }
               }
             }
           }
         }
       }
-      .main_map{width: 90%;
-      background: #484B51;}
-
+    }
+    .main_map {
+      width: 90%;
+      background: #484b51;
     }
   }
+}

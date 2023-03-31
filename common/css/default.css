@@ -688,15 +688,27 @@ input:focus {
   display: none;
 }
 
-.wrapper.main {
+.wrapper {
   width: 100%;
   height: 100%;
+}
+.wrapper.main {
   display: flex;
   flex-direction: column;
   padding: 0 32px;
+  padding-top: 64px;
+}
+.wrapper.sub {
+  padding: 0 32px;
+  padding-top: 64px;
+}
+.wrapper.sub .info_wrap {
+  margin-bottom: 20px;
+}
+.wrapper.sub .info_wrap .imgwrap {
+  width: 66px;
 }
 .wrapper .info_wrap {
-  padding-top: 64px;
   margin-bottom: 48px;
 }
 .wrapper .info_wrap .imgwrap {
@@ -740,21 +752,21 @@ input:focus {
 }
 .wrapper .input_wrap .login .loginform_wrap form input:focus {
   outline: none;
-  border: 1px solid #016FF3;
+  border: 1px solid #016ff3;
 }
 .wrapper .input_wrap .login .loginform_wrap form input:focus::-moz-placeholder {
-  color: #484B51;
+  color: #484b51;
 }
 .wrapper .input_wrap .login .loginform_wrap form input:focus::placeholder {
-  color: #484B51;
+  color: #484b51;
 }
 .wrapper .input_wrap .login .loginform_wrap form input::-moz-placeholder {
   font-weight: 500;
-  color: #AAB0B8;
+  color: #aab0b8;
 }
 .wrapper .input_wrap .login .loginform_wrap form input::placeholder {
   font-weight: 500;
-  color: #AAB0B8;
+  color: #aab0b8;
 }
 .wrapper .input_wrap .login .loginform_wrap form input[type=text] {
   background: url(../images/email_ico.png) no-repeat;
@@ -777,7 +789,7 @@ input:focus {
 .wrapper .input_wrap .login .loginform_wrap form input[type=password]:focus {
   background: url(../images/password_ico_on.png) no-repeat;
   background-position: 14px center;
-  border-top: 1px solid #016FF3;
+  border-top: 1px solid #016ff3;
 }
 .wrapper .input_wrap .login .loginform_wrap form input[type=button] {
   border: 1px solid transparent;
@@ -785,12 +797,12 @@ input:focus {
   font-weight: 500;
   margin-top: 40px;
   cursor: pointer;
-  background: #6D769F;
+  background: #6d769f;
   color: #fff;
   padding: 14px 45px;
 }
 .wrapper .input_wrap .login .loginform_wrap form input#login_btn {
-  background: #4661DC;
+  background: #4661dc;
 }
 .wrapper .input_wrap .login .loginform_wrap form input#otp {
   background: url(../images/otp_ico.png) no-repeat;
@@ -802,7 +814,7 @@ input:focus {
 .wrapper .input_wrap .login .loginform_wrap form input#otp:focus {
   background: url(../images/otp_ico_on.png) no-repeat;
   background-position: 14px center;
-  border-top: 1px solid #016FF3;
+  border-top: 1px solid #016ff3;
 }
 .wrapper .input_wrap .login .loginform_wrap form .email_box:not(:valid) ~ .close-icon {
   display: none;
@@ -829,16 +841,16 @@ input:focus {
   text-align: right;
   font-size: 0.875em;
   font-weight: 500;
-  color: #484B51;
+  color: #484b51;
   opacity: 1;
 }
 .wrapper .input_wrap h3 span {
-  color: #FC1F53;
+  color: #fc1f53;
   margin-left: 8px;
 }
 .wrapper .input_wrap h3.tit {
   font-weight: 400;
-  color: #1D1F35;
+  color: #1d1f35;
   opacity: 0.6;
 }
 .wrapper .main_footer .cp {
@@ -860,6 +872,64 @@ input:focus {
 .lnb_wrap .main_lnb_container .lnb li a div {
   width: 144px;
   height: 144px;
+}
+
+.errp_text .page_tit {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 140%;
+  margin-bottom: 16px;
+}
+.errp_text .page_desc {
+  line-height: 150%;
+  font-size: 14px;
+  font-weight: 400;
+  color: #696e76;
+  margin-bottom: 40px;
+}
+.errp_text .page_desc .blck {
+  font-weight: 500;
+  color: #1d1d1d;
+  margin-bottom: 16px;
+}
+.errp_text .page_desc ul li {
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 0 8px;
+}
+.errp_text .page_desc ul li::before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  background: #484b51;
+  border-radius: 50%;
+}
+.errp_text .page_desc ul li:last-child {
+  margin-bottom: unset;
+}
+.errp_text .btn_list {
+  display: flex;
+  justify-content: center;
+  gap: 0 12px;
+}
+
+.btn_1 {
+  color: #4661DC;
+  border: 1px solid #4661DC;
+  border-radius: 4px;
+  background: #fff;
+  width: 142px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn_1.blue {
+  color: #fff;
+  background: #4661DC;
+  border-color: transparent;
 }
 
 .wrapper .main_wrap {
@@ -888,7 +958,7 @@ input:focus {
 }
 .wrapper .main_wrap .main_map {
   width: 90%;
-  background: #484B51;
+  background: #484b51;
 }
 
 .contents {
@@ -1407,7 +1477,7 @@ input[type=date] {
   color: #484b51;
   font-size: 14px;
   padding: 0 15px;
-  background: url(../images/calendar_ico.png) no-repeat right 10px center;
+  background: url(../images/calendar_ico.png) no-repeat right 10px center #fff;
   background-size: 20px;
 }
 input[type=date]:focus {
