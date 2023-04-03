@@ -11,10 +11,12 @@
   <body>
     <div class="wrapper">
       <div class="dimm">
-        <div class="hmbg_menu_btn">
-          <span class="hmbg_t"></span>
-          <span class="hmbg_m"></span>
-          <span class="hmbg_b"></span>
+        <div class="inner_dimm">
+          <div class="hmbg_menu_btn">
+            <span class="hmbg_t"></span>
+            <span class="hmbg_m"></span>
+            <span class="hmbg_b"></span>
+          </div>
         </div>
       </div>
       <header>
@@ -114,50 +116,41 @@
       </div>
       <aside class="bottom_aside formap_pin">
         <div class="as_header">
-          <h2>시설물 정보</h2>
-          <button class="baside_close">x</button>
+          <h2>신고하기</h2>
+          <div class="hmbg_menu_btn blck ml_auto">
+            <span class="hmbg_t"></span>
+            <span class="hmbg_m"></span>
+            <span class="hmbg_b"></span>
+          </div>
         </div>
         <article class="as_contents">
           <div class="container">
             <div>
-              <div class="form_wrap com_wrap">
-                <form action="" class="fct_det_form com_form">
+              <div class="form_wrap">
+                <form action="">
                   <ul>
-                    <li>
-                      <label for="patrol_plan">관리 번호 <span>*</span></label>
+                    <li class="needflex">
+                    <!--   <label for="patrol_plan">관리 번호</label>
                       <input
                         type="text"
                         name="patrol_plan"
                         id="patrol_plan"
                         placeholder="서울-10-59"
                         readonly
-                      />
+                      /> -->
+                      <span class="form_label">관리번호</span>
+                      <p class="form_con blue_clr">서울-10-59</p>
                     </li>
                     <li>
-                      <label for="company">권역 선택 <span>*</span></label>
-                      <input
-                        type="text"
-                        name="company"
-                        id="company"
-                        placeholder="***권역"
-                        readonly
-                      />
+                      <textarea name="" id="" placeholder="내용을 입력하세요."></textarea>
                     </li>
                     <li>
-                      <label for="part"
-                        >시설물 그룹 명 입력 <span>*</span></label
-                      >
-                      <input
-                        type="text"
-                        name="part"
-                        id="part"
-                        placeholder="*** ASF 울타리"
-                        readonly
-                      />
                     </li>
                   </ul>
                 </form>
               </div>
+              
+              <button class="admit">등록하기</button>
             </div>
           </div>
         </article>

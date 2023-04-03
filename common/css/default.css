@@ -677,6 +677,10 @@ input:focus {
   display: none;
 }
 
+.ml_auto {
+  margin-left: auto;
+}
+
 .wrapper {
   width: 100%;
   height: 100%;
@@ -2166,6 +2170,45 @@ aside {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
+.hmbg_menu_btn {
+  cursor: pointer;
+  position: relative;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px 0;
+}
+.hmbg_menu_btn.blck {
+  width: 24px;
+  height: 24px;
+}
+.hmbg_menu_btn.blck span {
+  width: 100%;
+  background: #AAB0B8;
+}
+.hmbg_menu_btn span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 55%;
+  height: 3px;
+  border-radius: 2px;
+  background: #fff;
+}
+.hmbg_menu_btn span.hmbg_t {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.hmbg_menu_btn span.hmbg_m {
+  display: none;
+}
+.hmbg_menu_btn span.hmbg_b {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
 .left_aside {
   background: #fff;
   top: 57px;
@@ -2268,13 +2311,11 @@ aside {
 
 .bottom_aside {
   background: #fff;
-  left: 1%;
   bottom: -100%;
-  width: 98%;
-  height: calc(100vh - 57px);
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-  padding: 1%;
+  width: 100%;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  padding: 32px 24px 0;
 }
 .bottom_aside.active {
   bottom: 0;
@@ -2282,11 +2323,68 @@ aside {
 .bottom_aside .as_header {
   width: 100%;
   display: flex;
+  align-items: center;
+  margin-bottom: 40px;
 }
-.bottom_aside .as_header button {
-  width: 20px;
-  height: 20px;
-  border: 1px solid #999;
-  border-radius: 4px;
-  margin-left: auto;
+.bottom_aside .as_header h2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: -0.02em;
+}
+.bottom_aside .as_contents .form_wrap {
+  margin-bottom: 32px;
+}
+.bottom_aside .as_contents .form_wrap .needflex {
+  justify-content: space-between;
+}
+.bottom_aside .as_contents .form_wrap li {
+  margin-bottom: 20px;
+}
+.bottom_aside .as_contents .form_wrap li:last-child {
+  margin-bottom: unset;
+}
+.bottom_aside .as_contents .form_wrap .form_label {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: #696E76;
+}
+.bottom_aside .as_contents .form_wrap .form_con {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+.bottom_aside .as_contents .form_wrap textarea {
+  padding: 12px 16px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  box-sizing: border-box;
+}
+.bottom_aside .as_contents .form_wrap textarea::-moz-placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+}
+.bottom_aside .as_contents .form_wrap textarea::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+}
+.bottom_aside button.admit {
+  display: block;
+  width: calc(100% + 48px);
+  height: 52px;
+  position: relative;
+  left: -24px;
+  background: #4661DC;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.blue_clr {
+  color: #4661DC;
 }/*# sourceMappingURL=default.css.map */

@@ -1481,6 +1481,48 @@ aside {
     }
   }
 }
+
+.hmbg_menu_btn {
+  cursor: pointer;
+  position: relative;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px 0;
+
+  &.blck {
+    width: 24px;
+    height: 24px;
+    span {
+      width: 100%;
+      background: #AAB0B8;
+    }
+  }
+
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      width: 55%;
+      height: 3px;
+      border-radius: 2px;
+      background: #fff;
+      
+      &.hmbg_t {
+        transform: translate(-50%,-50%) rotate(45deg);
+      }
+      &.hmbg_m {
+        display: none;
+      }
+      &.hmbg_b {
+        transform: translate(-50%,-50%) rotate(-45deg);
+      }
+  }
+}
 .left_aside {
   background: #fff;
   top: 57px;
@@ -1600,13 +1642,11 @@ aside {
 
 .bottom_aside {
   background: #fff;
-  left: 1%;
   bottom: -100%;
-  width: 98%;
-  height: calc(100vh - 57px);
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-  padding: 1%;
+  width: 100%;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  padding: 32px 24px 0;
 
   .container {
   }
@@ -1618,13 +1658,71 @@ aside {
   .as_header {
     width: 100%;
     display: flex;
+    align-items: center;
+    margin-bottom: 40px;
 
-    button {
-      width: 20px;
-      height: 20px;
-      border: 1px solid #999;
-      border-radius: 4px;
-      margin-left: auto;
+
+    h2 {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 29px;
+      letter-spacing: -0.02em;
     }
   }
+
+  .as_contents {
+
+    .form_wrap {
+      margin-bottom: 32px;
+      .needflex {
+        justify-content: space-between;
+      }
+      li {
+        margin-bottom: 20px;
+        &:last-child {
+          margin-bottom: unset;
+        }
+      }
+      .form_label {
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: -0.02em;
+        color: #696E76;
+      }
+      .form_con {
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: -0.02em;
+      }
+
+      textarea {
+        padding: 12px 16px;
+        height: 48px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 150%;
+        box-sizing: border-box;
+        &::placeholder {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 150%;
+        }
+      }
+
+    }
+  }
+  button.admit {
+    display: block;
+    width: calc(100% + 48px);
+    height: 52px;
+    position: relative;
+    left: -24px;
+    background: #4661DC;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+.blue_clr {
+  color: #4661DC;
 }

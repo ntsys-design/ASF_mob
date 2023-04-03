@@ -10,8 +10,24 @@
 
   <body>
     <div class="wrapper">
+      <div class="dimm">
+        <div class="inner_dimm">
+          <div class="hmbg_menu_btn">
+            <span class="hmbg_t"></span>
+            <span class="hmbg_m"></span>
+            <span class="hmbg_b"></span>
+          </div>
+        </div>
+      </div>
       <header>
         <div class="container">
+          <div class="logowrap">
+            <h1>
+              <a href="../html/시설물정보_main.html">
+                <img src="../common/images/mob_logo.png " alt="">
+              </a>
+            </h1>
+          </div>
           <ul class="hdr_menu">
             <li class="hmbg_btn">
               <div>
@@ -20,69 +36,31 @@
                 <span class="hmbg_b"></span>
               </div>
             </li>
-            <li>
-              <div>
-                <a href="">
-                  <img src="" alt="" />
-                </a>
-              </div>
-            </li>
           </ul>
-          <div>
-            <h1>
-              <a href=""></a>
-            </h1>
-          </div>
-          <div class="nav_wrap">
-            <!-- 0308 my_info 추가 -->
-            <div class="util">
-              <a href="#"
-                >반갑습니다. 김길동님!
-                <button>
-                  <span class="hide">메뉴보기</span>
-                </button>
-              </a>
-              <ul class="my_info">
-                <li><a href="#">PROFILE</a></li>
-                <li><a href="#">LOGOUT</a></li>
-              </ul>
-            </div>
-            <!--// 0308 my_info 추가 -->
-          </div>
         </div>
       </header>
-      <div class="lnb_wrap">
-        <div class="container">
-          <!-- 0220 lnb 구조 수정 -->
-          <ul class="lnb">
-            <li>
-              <a href="../html/시설물정보_main.html">
-                <div>
-                  <img src="../common/images/fclt_ico.png" alt="시설물 정보 아이콘">
-                  <span>시설물 정보</span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="../html/순찰일지관리_목록.html">
-                <div>
-                  <img src="../common/images/ptr_log_ico.png" alt="순찰 일지 관리 아이콘">
-                  <span>순찰 일지 관리</span>
-                </div>
-              </a>
-            </li>
-            <li class="on">
-              <a href="../html/유지보수작업관리_목록.html">
-                <div>
-                  <img src="../common/images/mt_ico.png" alt="유지보수 작업 관리 아이콘">
-                  <span>유지보수 작업 관리</span>
-                </div>
-              </a>
-            </li>
-          </ul>
-          <!-- //0220 lnb 구조 수정 -->
+      <aside class="left_aside forhmbg">
+        <div class="logowrap">
+          <h2>
+            <a href="../html/시설물정보_main.html">
+              <span class="hide">시설물 정보</span>
+              <img src="../common/images/menu_logo.png" alt="asf 로고">
+            </a>
+          </h2>
         </div>
-      </div>
+        <ul class="hmbg_menu">
+          <li>
+            <a href="../html/순찰일지관리_목록.html">순찰 일지 관리</a>
+          </li>
+          <li>
+            <a href="../html/유지보수작업관리_목록.html">유지 보수 작업 관리</a>
+          </li>
+        </ul>
+        <button>로그아웃</button>
+        <p class="menu_footer">
+          Copyright © Environmental Preservation Association All rights reserved.
+        </p>
+      </aside>
       <div class="contents">
         <div class="container">
           <h2>유지보수 작업 카드</h2>

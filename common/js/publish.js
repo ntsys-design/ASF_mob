@@ -215,7 +215,7 @@ $('.map_pin').on('click', function(e) {
 // 외부영역 클릭 시 검색창 닫기
 $(document).mouseup(function (e) {
 	e.stopPropagation();
-  var nonTarget = $(".formap_pin, .baside_close");
+  var nonTarget = $(".formap_pin, .hmbg_menu_btn.blck");
   if (nonTarget.has(e.target).length === 0) {
       nonTarget.removeClass("active");
       $(".formap_pin").removeClass("active");
@@ -223,7 +223,7 @@ $(document).mouseup(function (e) {
   }
 });
 
-$('.baside_close').on('click', function(e) {
+$('.hmbg_menu_btn.blck').on('click', function(e) {
     $(this).removeClass('selected');
     $('.bottom_aside.formap_pin').removeClass('active')
 })
