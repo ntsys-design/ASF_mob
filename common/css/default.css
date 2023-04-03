@@ -346,6 +346,9 @@ header {
 header.active {
   top: -100%;
 }
+header .logowrap {
+  width: 53px;
+}
 header.miniver {
   background: rgba(70, 97, 220, 0.8);
   width: 94px;
@@ -399,7 +402,7 @@ header .container > ul li.hmbg_btn > div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2px 0;
+  gap: 3px 0;
 }
 header .container > ul li.hmbg_btn > div span {
   display: block;
@@ -2122,6 +2125,46 @@ aside {
 .dimm.active {
   left: 0;
 }
+.dimm .inner_dimm {
+  width: 18.9%;
+  height: 56px;
+  top: 0;
+  right: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dimm .hmbg_menu_btn {
+  cursor: pointer;
+  position: relative;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px 0;
+}
+.dimm .hmbg_menu_btn span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 55%;
+  height: 3px;
+  border-radius: 2px;
+  background: #fff;
+}
+.dimm .hmbg_menu_btn span.hmbg_t {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.dimm .hmbg_menu_btn span.hmbg_m {
+  display: none;
+}
+.dimm .hmbg_menu_btn span.hmbg_b {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
 
 .left_aside {
   background: #fff;
@@ -2133,39 +2176,43 @@ aside {
 .left_aside.forhmbg {
   width: 81.1%;
   height: 100%;
+  padding: 24px 32px 48px;
   top: 0;
   left: 0;
   border-radius: 0;
   left: -81.1%;
   z-index: 6;
-}
-.left_aside.forhmbg .hmbg_menu_btn {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-.left_aside.forhmbg .hmbg_menu_btn > ul {
-  width: 42px;
-  height: 42px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2px 0;
 }
-.left_aside.forhmbg .hmbg_menu_btn > ul li {
-  width: 100%;
-  height: 100%;
+.left_aside.forhmbg .logowrap {
+  width: 80px;
+  margin-bottom: 80px;
 }
-.left_aside.forhmbg .hmbg_menu_btn > ul span {
-  display: block;
-  width: 55%;
-  height: 3px;
+.left_aside.forhmbg .hmbg_menu li {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 160%;
+  margin-bottom: 16px;
+}
+.left_aside.forhmbg .hmbg_menu li:last-child {
+  margin-bottom: unset;
+}
+.left_aside.forhmbg button {
+  margin-top: auto;
+  width: 73px;
+  height: 28px;
+  border: 1px solid #d9d9d9;
   border-radius: 2px;
-  background: #000;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #666;
 }
-.left_aside.forhmbg .hmbg_menu_btn > ul span.hmbg_m {
-  display: none;
+.left_aside.forhmbg .menu_footer {
+  color: #555;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 150%;
 }
 .left_aside.active {
   left: 0;

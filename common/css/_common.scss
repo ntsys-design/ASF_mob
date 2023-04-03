@@ -26,6 +26,9 @@ header {
   &.active {
     top: -100%;
   }
+  .logowrap {
+    width: 53px;
+  }
 
   &.miniver {
     background: rgba(70,97,220,0.8);
@@ -84,7 +87,7 @@ header {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 2px 0;
+            gap: 3px 0;
 
             span {
               display: block;
