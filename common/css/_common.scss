@@ -58,7 +58,8 @@ header {
     > ul {
       &.hdr_menu {
         flex-shrink: 0;
-        width: 42px;
+        width: 24px;
+        height: 24px;
       }
       position: relative;
       width: 100%;
@@ -67,6 +68,7 @@ header {
 
       li {
         width: 100%;
+        height: 100%;
         position: relative;
 
         > div {
@@ -80,23 +82,10 @@ header {
           }
         }
 
-        &.hmbg_btn {
-          cursor: pointer;
-          > div {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 3px 0;
-
-            span {
-              display: block;
-              width: 55%;
-              height: 3px;
-              border-radius: 2px;
-              background: #000;
-            }
-          }
+        .hmbg_btn {
+          width: 100%;
+          height: 100%;
+          background: url(../images/hmbg_btn.png) no-repeat center center;
 
         }
 

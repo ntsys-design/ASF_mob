@@ -1452,55 +1452,20 @@ aside {
   .hmbg_menu_btn {
     cursor: pointer;
     position: relative;
-    width: 42px;
-    height: 42px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 3px 0;
-
-      span {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        display: block;
-        width: 55%;
-        height: 3px;
-        border-radius: 2px;
-        background: #fff;
-        
-        &.hmbg_t {
-          transform: translate(-50%,-50%) rotate(45deg);
-        }
-        &.hmbg_m {
-          display: none;
-        }
-        &.hmbg_b {
-          transform: translate(-50%,-50%) rotate(-45deg);
-        }
-    }
+    width: 24px;
+    height: 24px;
+    background: url(../images/close_btn.png) no-repeat center center;
   }
 }
 
 .hmbg_menu_btn {
   cursor: pointer;
   position: relative;
-  width: 42px;
-  height: 42px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 3px 0;
+  width: 24px;
+  height: 24px;
 
   &.blck {
-    width: 24px;
-    height: 24px;
-    span {
-      width: 100%;
-      background: #AAB0B8;
-    }
+    background: url(../images/btn_close_g.png) no-repeat center center;
   }
 
     span {
