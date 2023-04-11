@@ -2350,6 +2350,7 @@ aside {
   color: #696E76;
 }
 .tab_menu li a {
+  padding: 0 2px;
   padding-bottom: 12px;
 }
 .tab_menu li.on {
