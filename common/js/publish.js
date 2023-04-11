@@ -157,11 +157,13 @@ $('.hmbg_btn').on('click',function(e) {
     $('.left_aside.forhmbg').removeClass('active')
     $('.dimm').removeClass('active')
     $('header').removeClass('active')
+    $('.wrapper').removeClass('lock')
   }else{
     $(this).addClass('active');
     $('.left_aside.forhmbg').addClass('active')
     $('.dimm').addClass('active')
     $('header').addClass('active')
+    $('.wrapper').addClass('lock')
   }
 })
 
@@ -176,6 +178,7 @@ $(document).mouseup(function (e) {
       $(".lnb_wrap").removeClass("active");
       $('.dimm').removeClass('active')
       $('header').removeClass('active')
+      $('.wrapper').removeClass('lock')
   }
 });
 

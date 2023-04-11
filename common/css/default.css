@@ -2041,45 +2041,6 @@ select.readonly {
   margin-right: 16px;
 }
 
-.tab_menu {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 0 2px;
-  position: relative;
-}
-.tab_menu::after {
-  content: "";
-  position: absolute;
-  width: calc(100% + 20px);
-  height: 1px;
-  border-top: 1px solid #999;
-  background: #fff;
-  transform: translateX(-50%);
-  left: 50%;
-  bottom: 0;
-  z-index: 4;
-}
-.tab_menu li {
-  position: relative;
-  border: 1px solid #999;
-  padding: 5px;
-  font-size: 14px;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-}
-.tab_menu li.on {
-  border-bottom: none;
-}
-.tab_menu li.on::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 1px;
-  width: 100%;
-  height: 1px;
-  background: #fff;
-  z-index: 5;
-}
 
 .needflex {
   display: flex;
@@ -2345,4 +2306,106 @@ aside {
 
 .blue_clr {
   color: #4661DC;
-}/*# sourceMappingURL=default.css.map */
+}
+
+
+/* 230411 */
+.nmt {
+  margin-top: 0;
+}
+.contents .form_wrap.com_wrap .tbl_tit {
+  padding: 15px 0;
+}
+.tabwrap {
+  overflow: auto;
+  padding-bottom: 10px;
+  padding-top: 12px;
+}
+.tab_menu {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0 24px;
+  position: relative;
+  padding: 0 26px;
+  position: relative;
+}
+.tab_menu::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #DDE1E4;
+  position: absolute;
+  z-index: 4;
+  left: 0;
+  bottom: 0;
+}
+.tab_menu li {
+  flex-shrink: 0;
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  color: #696E76;
+}
+.tab_menu li a {
+  padding-bottom: 12px;
+}
+.tab_menu li.on {
+  border-bottom: none;
+  font-weight: 600;
+  color: #000;
+}
+.tab_menu li.on a {
+  border-bottom: 4px solid #000;
+  position: relative;
+  z-index: 5;
+}
+.tab_con_btn {
+  background: #fff;
+}
+.tab_con .btn_wrap {
+  flex-wrap: wrap;
+  gap: 10px 2%;
+  padding-top: unset;
+}
+.btn_wrap button {
+  width: 48%;
+  margin-right: unset;
+}
+.btn_wrap button.remove_btn {
+
+}
+.btn_wrap button.list_btn {
+  background: #eee;
+}
+.ovhd {
+  overflow: auto;
+  margin-bottom: 15px;
+}
+.contents .form_wrap.com_wrap.ptr_pl_regi.ovhd table {
+  min-width: 800px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.ovhd table thead tr {
+  border-bottom:1px solid #b6b8b9;
+}
+.ovhd table thead th {
+  background: #efefef;
+}
+.ovhd table tbody tr {
+  border-bottom:1px solid #b6b8b9;
+}
+.name_list_tb > li:first-child {
+  display: none;
+}
+.nm_list_tit {
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  padding: 15px 0;
+}
+.wrapper.lock {
+  overflow: hidden;
+}
+/*# sourceMappingURL=default.css.map */
