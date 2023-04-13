@@ -2412,3 +2412,8 @@ aside {
   overflow: hidden;
 }
 /*# sourceMappingURL=default.css.map */
+
+/* 0413 로그인 폼 수정 */
+#aform >div{
+  position: relative;
+}

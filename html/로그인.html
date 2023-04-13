@@ -20,31 +20,34 @@
       <div class="input_wrap">
         <div class="login">
           <div class="loginform_wrap">
-            <form>
-              <label for="loginid" class="hide">id</label>
-              <input
-                type="text"
-                name="id"
-                required
-                class="email_box"
-                id="loginid"
-                placeholder="E-MAIL"
-                autocomplete="off"
-              />
-              <button class="close-icon" type="reset"></button>
-            </form>
-            <form>
-              <label for="pwd" class="hide">pwd</label>
-              <input
-                type="password"
-                id="pwd"
-                name="pwd"
-                required
-                class="pw_box"
-                placeholder="PASSWORD"
-              />
-              <button class="close-icon" type="reset"></button>
-            </form>
+            <form id="aform">
+              <div>
+                <label for="loginid" class="hide">id</label>
+                <input
+                  type="text"
+                  name="id"
+                  required
+                  class="email_box"
+                  id="loginid"
+                  placeholder="E-MAIL"
+                  autocomplete="off"
+                />
+                <button class="close-icon"></button>
+              </div>
+      
+              <div>
+                <label for="pwd" class="hide">pwd</label>
+                <input
+                  type="password"
+                  id="pwd"
+                  name="pwd"
+                  required
+                  class="pw_box"
+                  placeholder="PASSWORD"
+                />
+                <button class="close-icon"></button>
+              </div>
+            
             <!-- <form>
               <label for="otp" class="hide">pwd</label>
               <input
@@ -58,7 +61,7 @@
               <button class="close-icon" type="reset"></button>
             </form> -->
 
-            <form>
+           
               <input type="button" id="login_btn" value="로그인" />
             </form>
           </div>
