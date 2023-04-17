@@ -2417,3 +2417,46 @@ aside {
 #aform >div{
   position: relative;
 }
+
+/* 230417 */
+.add_btnwrap {
+  position: absolute;
+  z-index: 4;
+  background: #fff;
+  border: 1px solid #000;
+}
+.lc_searchwrap {
+  top: 80px;
+  right: 5%;
+}
+.lc_searchwrap.on {
+  width: 90%;
+}
+.lc_searchwrap .lc_header {
+  display: flex;
+  align-items: center;
+}
+.lc_searchwrap .lc_header .lc_input {
+  flex-grow: 1;
+  display: none;
+}
+.lc_searchwrap .lc_header .lc_search_btn {
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+}
+.lc_searchwrap .lc_header .lc_input.on {
+  display: block;
+}
+.lc_searchwrap .lc_cont {
+  display: none;
+}
+.lc_searchwrap .lc_cont.on {
+  display: block;
+}
+
+
+.fltrwrap {
+  top: 80px;
+  left: 5%;
+}
