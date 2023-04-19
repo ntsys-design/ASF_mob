@@ -157,16 +157,43 @@
                 <form action="">
                   <ul>
                     <li class="needflex">
-                      <!--   <label for="patrol_plan">관리 번호</label>
-                      <input
-                        type="text"
-                        name="patrol_plan"
-                        id="patrol_plan"
-                        placeholder="서울-10-59"
-                        readonly
-                      /> -->
                       <span class="form_label">관리번호</span>
                       <p class="form_con blue_clr">서울-10-59</p>
+                    </li>
+                    <li class="needflex">
+                      <span class="form_label">훼손유형</span>
+                      <div>
+                        <select name="" id="">
+                          <option value="" disabled selected>선택</option>
+                          <option value="">1</option>
+                          <option value="">2</option>
+                          <option value="">3</option>
+                        </select>
+                      </div>
+                    </li>
+                    <li class="needflex">
+                      <span class="form_label">대상지</span>
+                      <p class="form_con">설악산 흔들바위 두번째 움푹파인 곳</p>
+                    </li>
+                    <li class="needflex">
+                      <span class="form_label">시설물</span>
+                      <ul class="chk_list">
+                        <li>
+                          <input type="checkbox" name="chk_01" id="chk_01" />
+                          <label for="chk_01">기피제</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" name="chk_02" id="chk_02" />
+                          <label for="chk_02">경광등</label>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="needflex fileup">
+                      <span class="form_label">조치 전 사진</span>
+                      <button class="btn_add_img">파일첨부</button>
+                      <div class="filelistwrap">
+                        <p><span>img_20240812323424</span><button class="btn_file_elm"></button></p>
+                      </div>
                     </li>
                     <li>
                       <textarea
