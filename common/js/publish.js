@@ -219,30 +219,27 @@ $(".hmbg_menu_btn.blck").on("click", function (e) {
   $(".bottom_aside.formap_pin").removeClass("active");
 });
 
-// location search
 
-$(".lc_search_btn").on("click", function (e) {
+//필터버튼
+
+// fltr search
+
+$(".fltrwrap").on("click", function (e) {
   if ($(this).hasClass("on")) {
     $(this).removeClass("on");
-    $(".lc_searchwrap").removeClass("on");
-    $(".lc_input").removeClass("on");
-    $(".lc_cont").removeClass("on");
+    $('.bottom_aside.forfltr').removeClass('active')
   } else {
     $(this).addClass("on");
-    $(".lc_searchwrap").addClass("on");
-    $(".lc_input").addClass("on");
-    $(".lc_cont").addClass("on");
+    $('.bottom_aside.forfltr').addClass('active')
   }
 });
 
 // 외부영역 클릭 시 검색창 닫기
 $(document).mouseup(function (e) {
   e.stopPropagation();
-  var nonTarget = $(".lc_header");
+  var nonTarget = $(".fltrwrap, .forfltr.active");
   if (nonTarget.has(e.target).length === 0) {
-    $(".lc_search_btn").removeClass("on");
-    $(".lc_searchwrap").removeClass("on");
-    $(".lc_input").removeClass("on");
-    $(".lc_cont").removeClass("on");
+    $(".forfltr").removeClass("active");
+    $(".fltrwrap").removeClass("on");
   }
 });

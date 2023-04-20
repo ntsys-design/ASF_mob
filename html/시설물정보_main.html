@@ -17,6 +17,11 @@
       </div>
       <header>
         <div class="container">
+          <ul class="hdr_menu">
+            <li>
+              <button class="hmbg_btn"></button>
+            </li>
+          </ul>
           <div class="logowrap">
             <h1>
               <a href="../html/시설물정보_main.html">
@@ -24,50 +29,21 @@
               </a>
             </h1>
           </div>
-          <ul class="hdr_menu">
-            <li>
-              <button class="hmbg_btn"></button>
-            </li>
-          </ul>
         </div>
+        <section class="searchwrap">
+          <div class="search_input">
+            <label for=""></label>
+            <input type="text" placeholder="시설물 검색" />
+            <button class="search_btn">
+              <span class="hide">주소 검색하기</span>
+            </button>
+          </div>
+        </section>
       </header>
       <div class="add_btnwrap fltrwrap">
-        <div class="fltr_header">
-          <button class="fltr_btn">
-            <span class="hide">필터 목록보기</span>대충필터모양아이콘
-          </button>
-        </div>
-        <section class="fltr_cont">
-          <ul class="fltr_list">
-            <li class="fltr_item">
-              <a href=""></a>
-            </li>
-          </ul>
-        </section>
-      </div>
-      <div class="add_btnwrap lc_searchwrap">
-        <div class="lc_header">
-          <div class="lc_input">
-            <label for=""></label>
-            <input type="text" placeholder="주소를 입력하세요"/>
-          </div>
-          <button class="lc_search_btn">
-            <span class="hide">주소 검색하기</span>대충돋보기아이콘
-          </button>
-        </div>
-        <section class="lc_cont">
-          <ul class="srch_list">
-            <li class="srch_item">
-              <a href="">경기</a>
-            </li>
-            <li class="srch_item">
-              <a href="">경기</a>
-            </li>
-            <li class="srch_item">
-              <a href="">경기</a>
-            </li>
-          </ul>
-        </section>
+        <button class="fltr_btn">
+          <span class="hide">필터 목록보기</span>
+        </button>
       </div>
       <aside class="left_aside forhmbg">
         <div class="logowrap">
@@ -192,18 +168,22 @@
                       <span class="form_label">조치 전 사진</span>
                       <button class="btn_add_img">파일첨부</button>
                       <div class="filelistwrap">
-                        <p><span>img_20240812323424</span><button class="btn_file_elm"></button></p>
+                        <p>
+                          <span>img_20240812323424</span
+                          ><button class="btn_file_elm"></button>
+                        </p>
+                        <p>
+                          <span>img_20240812323424</span
+                          ><button class="btn_file_elm"></button>
+                        </p>
                       </div>
                     </li>
-                    <li>
-                      <textarea
-                        name=""
-                        id=""
-                        placeholder="내용을 입력하세요."
-                      ></textarea>
-                    </li>
-                    <li></li>
                   </ul>
+                  <textarea
+                    name=""
+                    id=""
+                    placeholder="내용을 입력하세요."
+                  ></textarea>
                 </form>
               </div>
 
@@ -211,6 +191,14 @@
             </div>
           </div>
         </article>
+      </aside>
+      <aside class="bottom_aside forfltr">
+        <ul>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+        </ul>
       </aside>
       <!--   <footer>
       <div class="container">
