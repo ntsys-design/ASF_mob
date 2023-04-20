@@ -337,8 +337,6 @@ header {
   width: 100%;
   height: 56px;
   background: #fff;
-  position: fixed;
-  top: 0;
   z-index: 4;
   /* box-shadow: 0 0 4px #000; */
   transition: all 0.2s;
@@ -2258,11 +2256,11 @@ aside {
   justify-content: space-between;
 }
 .bottom_aside .as_contents .form_wrap form > ul {
-  max-height: 200px;
+  max-height: 208px;
   overflow-y: scroll;
   position: relative;
   width: calc(100% + 15px);
-
+  line-height: 19px;
   padding-right: 15px;
 }
 .bottom_aside .as_contents .form_wrap form > ul::-webkit-scrollbar {
@@ -2449,8 +2447,8 @@ aside {
   position: absolute;
   z-index: 4;
   background: #fff;
-  top: 122px;
-  right: 5%;
+  top: 128px;
+  right: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2480,8 +2478,8 @@ aside {
   color: #55626F;
 }
 .chk_list > li input[type='checkbox'] {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   margin: 0;
   padding: 0;
   background: url(../images/chkbox_off.png) no-repeat center center;
@@ -2526,7 +2524,8 @@ aside {
   align-items: center;
   justify-content: right;
   gap: 0 12px;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
+  line-height: 19px;
 }
 .filelistwrap p:last-of-type {
   margin-bottom: unset;
@@ -2539,8 +2538,8 @@ aside {
   overflow: hidden;
 }
 .filelistwrap .btn_file_elm {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   background: url(../images/btn_file_elm.png) no-repeat center center;
 }
 
@@ -2553,14 +2552,17 @@ header .container::after {
 }
 
 .searchwrap {
-  background: #fff;
-  padding: 0 24px 12px;
+  width: 100%;
+  position: absolute;
+  z-index: 4;
+  top: 72px;
+  padding: 0 24px;
 }
 .searchwrap .search_input {
   width: 100%;
   border-radius: 4px;
   background: #F2F3F5;
-  height: 36px;
+  height: 40px;
   position: relative;
   display: flex;
   align-items: center;
@@ -2583,4 +2585,32 @@ header .container::after {
   height: 20px;
   background: url(../images/main_search_btn.png) no-repeat center center;
 }
-
+.forfltr {
+  padding-bottom: 30px;
+}
+.forfltr > ul {
+  flex-wrap: wrap;
+  gap: 20px 10px;
+}
+.forfltr > ul > li {
+  width: calc((100% - 10px)/2);
+}
+.forfltr > ul > li a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 0 8px ;
+  align-items: center;
+  color: #55626F;
+  font-size: 16px;
+  word-break: keep-all;
+}
+.forfltr > ul > li a  span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../images/chck_cnfrm_off.png) no-repeat center center;
+}
+.forfltr > ul > li a  span.on {
+  background: url(../images/chck_cnfrm_on.png) no-repeat center center;
+}

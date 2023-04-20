@@ -243,3 +243,9 @@ $(document).mouseup(function (e) {
     $(".fltrwrap").removeClass("on");
   }
 });
+
+
+$('.forfltr > ul > li a').on('click', function(e) {
+  e.preventDefault();
+  $(this).children('span').toggleClass('on')
+})
