@@ -1,313 +1,333 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ASF 관리시스템</title>
-    <link rel="stylesheet" href="../common/css/default.css" />
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ASF 관리시스템</title>
+        <link rel="stylesheet" href="../common/css/default.css" />
+    </head>
 
-  <body>
-    <div class="wrapper">
-      <div class="dimm">
-        <div class="inner_dimm">
-          <button class="hmbg_menu_btn"></button>
-        </div>
-      </div>
-      <header>
-        <div class="container">
-          <ul class="hdr_menu">
-            <li>
-              <button class="hmbg_btn"></button>
-            </li>
-          </ul>
-          <div class="logowrap">
-            <h1>
-              <a href="../html/시설물정보_main.html">
-                <img src="../common/images/mob_logo.png " alt="" />
-              </a>
-            </h1>
-          </div>
-        </div>
-      </header>
-      <section class="searchwrap">
-        <div class="search_input">
-          <label for=""></label>
-          <input type="text" placeholder="시설물 검색" />
-          <button class="search_btn">
-            <span class="hide">주소 검색하기</span>
-          </button>
-        </div>
-      </section>
-      <div class="add_btnwrap fltrwrap">
-        <button class="fltr_btn">
-          <span class="hide">필터 목록보기</span>
-        </button>
-      </div>
-      <aside class="left_aside forhmbg">
-        <div class="logowrap">
-          <h2>
-            <a href="">
-              <span class="hide">시설물 정보</span>
-              <img src="../common/images/menu_logo.png" alt="asf 로고" />
-            </a>
-          </h2>
-        </div>
-        <ul class="hmbg_menu">
-          <li>
-            <a href="../html/순찰일지관리_목록.html">순찰 일지 관리</a>
-          </li>
-          <li>
-            <a href="../html/유지보수작업관리_목록.html">유지 보수 작업 관리</a>
-          </li>
-        </ul>
-        <button>로그아웃</button>
-        <p class="menu_footer">
-          Copyright © Environmental Preservation Association All rights
-          reserved.
-        </p>
-      </aside>
-      <aside class="left_aside form_menu">
-        <section class="needflex">
-          <div>
-            <label for="" class="hide"></label>
-            <select name="" id="">
-              <option value="" selected>주소</option>
-              <option value=""></option>
-              <option value=""></option>
-            </select>
-          </div>
-          <div>
-            <label for="" class="hide"></label>
-            <input
-              type="text"
-              name=""
-              id=""
-              placeholder="검색어를 입력하세요."
-            />
-          </div>
-        </section>
-        <div class="m_menu_acc">
-          <ul>
-            <li>
-              <a href="#"> ASF발생지점&nbsp;(<span>10</span>) </a>
-            </li>
-            <li>
-              <a href="#"> 기피제&nbsp;(<span>0</span>) </a>
-            </li>
-            <li>
-              <a href="#"> 경광등&nbsp;(<span>3</span>) </a>
-            </li>
-            <li>
-              <a href="#"> 축산농가&nbsp;(<span>5</span>) </a>
-            </li>
-            <li>
-              <a href="#"> 권역&nbsp;(<span>6</span>) </a>
-            </li>
-          </ul>
-        </div>
-        <div class="btnwrap needflex">
-          <button>표시항목</button>
-          <button>기타옵션</button>
-        </div>
-      </aside>
-      <div class="contents npt">
-        <div class="container">
-          <section class="mapwrap">
-            <div class="map">
-              <span class="map_pin">울타리1</span>
+    <body>
+        <div class="wrapper">
+            <div class="dimm">
+                <div class="inner_dimm">
+                    <button class="hmbg_menu_btn"></button>
+                </div>
             </div>
-          </section>
-        </div>
-      </div>
-      <aside class="bottom_aside formap_pin">
-        <div class="as_header">
-          <h2>유지보수 신고</h2>
-          <button class="hmbg_menu_btn blck ml_auto"></button>
-        </div>
-        <article class="as_contents">
-          <div class="container">
-            <div>
-              <div class="form_wrap">
-                <form action="">
-                  <ul>
-                    <li class="needflex">
-                      <span class="form_label">관리번호</span>
-                      <p class="form_con blue_clr">서울-10-59</p>
+            <header>
+                <div class="container">
+                    <ul class="hdr_menu">
+                        <li>
+                            <button class="hmbg_btn"></button>
+                        </li>
+                    </ul>
+                    <div class="logowrap">
+                        <h1>
+                            <a href="../html/시설물정보_main.html">
+                                <img src="../common/images/mob_logo.png " alt="" />
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+            </header>
+            <section class="searchwrap">
+                <div class="search_input">
+                    <label for=""></label>
+                    <input type="text" placeholder="시설물 검색" />
+                    <button class="search_btn">
+                        <span class="hide">주소 검색하기</span>
+                    </button>
+                </div>
+                <div class="search_resultwrap">
+                    <ul>
+                        <li class="search_list">
+                            <a href="">
+                                <p>
+                                    <span><em class="srch_hlt">양양</em>군</span>강원도
+                                </p>
+                            </a>
+                        </li>
+                        <li class="search_list">
+                            <a href="">
+                                <p>
+                                    <span><em class="srch_hlt">양양</em>메밀막국수</span>서울특별시 서초구 방배동 동동동대문을열어라
+                                </p>
+                            </a>
+                        </li>
+                        <li class="search_list">
+                            <a href="">
+                                <p>
+                                    <span><em class="srch_hlt">양양</em>집</span>서울특별시 송파구 삼전동
+                                </p>
+                            </a>
+                        </li>
+                        <li class="search_list">
+                            <a href="">
+                                <p>
+                                    <span><em class="srch_hlt">양양</em>공항</span>강원도 양양군 손양면 공항로
+                                </p>
+                            </a>
+                        </li>
+                        <li class="search_list">
+                            <a href="">
+                                <p>
+                                    <span><em class="srch_hlt">양양</em>꼬치</span>서울특별시 금천구 가산동 노블리움
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <div class="add_btnwrap fltrwrap">
+                <button class="fltr_btn">
+                    <span class="hide">필터 목록보기</span>
+                </button>
+            </div>
+            <aside class="left_aside forhmbg">
+                <div class="logowrap">
+                    <h2>
+                        <a href="">
+                            <span class="hide">시설물 정보</span>
+                            <img src="../common/images/menu_logo.png" alt="asf 로고" />
+                        </a>
+                    </h2>
+                </div>
+                <ul class="hmbg_menu">
+                    <li>
+                        <a href="../html/순찰일지관리_목록.html">순찰 일지 관리</a>
                     </li>
-                    <li class="needflex">
-                      <span class="form_label">훼손유형</span>
-                      <div>
+                    <li>
+                        <a href="../html/유지보수작업관리_목록.html">유지 보수 작업 관리</a>
+                    </li>
+                </ul>
+                <button>로그아웃</button>
+                <p class="menu_footer">Copyright © Environmental Preservation Association All rights reserved.</p>
+            </aside>
+            <aside class="left_aside form_menu">
+                <section class="needflex">
+                    <div>
+                        <label for="" class="hide"></label>
                         <select name="" id="">
-                          <option value="" disabled selected>선택</option>
-                          <option value="">1</option>
-                          <option value="">2</option>
-                          <option value="">3</option>
+                            <option value="" selected>주소</option>
+                            <option value=""></option>
+                            <option value=""></option>
                         </select>
-                      </div>
-                    </li>
-                    <li class="needflex">
-                      <span class="form_label">대상지</span>
-                      <p class="form_con">설악산 흔들바위 두번째 움푹파인 곳</p>
-                    </li>
-                    <li class="needflex">
-                      <span class="form_label">시설물</span>
-                      <ul class="chk_list">
+                    </div>
+                    <div>
+                        <label for="" class="hide"></label>
+                        <input type="text" name="" id="" placeholder="검색어를 입력하세요." />
+                    </div>
+                </section>
+                <div class="m_menu_acc">
+                    <ul>
                         <li>
-                          <input type="checkbox" name="chk_01" id="chk_01" />
-                          <label for="chk_01">기피제</label>
+                            <a href="#"> ASF발생지점&nbsp;(<span>10</span>) </a>
                         </li>
                         <li>
-                          <input type="checkbox" name="chk_02" id="chk_02" />
-                          <label for="chk_02">경광등</label>
+                            <a href="#"> 기피제&nbsp;(<span>0</span>) </a>
                         </li>
-                      </ul>
-                    </li>
-                    <li class="needflex fileup">
-                      <span class="form_label">조치 전 사진</span>
-                      <button class="btn_add_img">파일첨부</button>
-                      <div class="filelistwrap">
-                        <p>
-                          <span>img_20240812323424</span
-                          ><button class="btn_file_elm"></button>
-                        </p>
-                        <p>
-                          <span>img_20240812323424</span
-                          ><button class="btn_file_elm"></button>
-                        </p>
-                      </div>
-                    </li>
-                  </ul>
-                  <textarea
-                    name=""
-                    id=""
-                    placeholder="내용을 입력하세요."
-                  ></textarea>
-                </form>
-              </div>
-
-              <button class="admit">등록하기</button>
+                        <li>
+                            <a href="#"> 경광등&nbsp;(<span>3</span>) </a>
+                        </li>
+                        <li>
+                            <a href="#"> 축산농가&nbsp;(<span>5</span>) </a>
+                        </li>
+                        <li>
+                            <a href="#"> 권역&nbsp;(<span>6</span>) </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btnwrap needflex">
+                    <button>표시항목</button>
+                    <button>기타옵션</button>
+                </div>
+            </aside>
+            <div class="contents npt">
+                <div class="container">
+                    <section class="mapwrap">
+                        <div class="map">
+                            <span class="map_pin">울타리1</span>
+                        </div>
+                    </section>
+                </div>
             </div>
-          </div>
-        </article>
-      </aside>
-      <aside class="bottom_aside forfltr">
-        <ul class="needflex">
-          <li>
-            <a href="">
-              <span class="chck_cnfrm"></span>
-              ASF 발생지점
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span class="chck_cnfrm"></span>
-              기피제
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span class="chck_cnfrm"></span>
-              경광등
-            </a>
-          </li> 
-          <li>
-            <a href="">
-              <span class="chck_cnfrm"></span>
-              축산농가
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span class="chck_cnfrm"></span>
-              권역
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span class="chck_cnfrm"></span>
-              울타리
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span class="chck_cnfrm"></span>
-              태양광 울타리
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span class="chck_cnfrm"></span>
-              철도 울타리
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span class="chck_cnfrm"></span>
-              야생동물방지
-울타리
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span class="chck_cnfrm"></span>
-              기타 울타리
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span class="chck_cnfrm"></span>
-              교량
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span class="chck_cnfrm"></span>
-              낙석방지망
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span class="chck_cnfrm"></span>
-              웅벽
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span class="chck_cnfrm"></span>
-              2차울타리
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span class="chck_cnfrm"></span>
-              광역울타리
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span class="chck_cnfrm"></span>
-              지역농가차단울타리
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span class="chck_cnfrm"></span>
-              문
-            </a>
-          </li>
-        </ul>
-      </aside>
-      <!--   <footer>
+            <aside class="bottom_aside formap_pin">
+                <div class="as_header">
+                    <h2>유지보수 신고</h2>
+                    <button class="hmbg_menu_btn blck ml_auto"></button>
+                </div>
+                <article class="as_contents">
+                    <div class="container">
+                        <div>
+                            <div class="form_wrap">
+                                <form action="">
+                                    <ul>
+                                        <li class="needflex">
+                                            <span class="form_label">관리번호</span>
+                                            <p class="form_con blue_clr">서울-10-59</p>
+                                        </li>
+                                        <li class="needflex">
+                                            <span class="form_label">훼손유형</span>
+                                            <div>
+                                                <select name="" id="">
+                                                    <option value="" disabled selected>선택</option>
+                                                    <option value="">1</option>
+                                                    <option value="">2</option>
+                                                    <option value="">3</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                        <li class="needflex">
+                                            <span class="form_label">대상지</span>
+                                            <p class="form_con">설악산 흔들바위 두번째 움푹파인 곳</p>
+                                        </li>
+                                        <li class="needflex">
+                                            <span class="form_label">시설물</span>
+                                            <ul class="chk_list">
+                                                <li>
+                                                    <input type="checkbox" name="chk_01" id="chk_01" />
+                                                    <label for="chk_01">기피제</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="chk_02" id="chk_02" />
+                                                    <label for="chk_02">경광등</label>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="needflex fileup">
+                                            <span class="form_label">조치 전 사진</span>
+                                            <button class="btn_add_img">파일첨부</button>
+                                            <div class="filelistwrap">
+                                                <p><span>img_20240812323424</span><button class="btn_file_elm"></button></p>
+                                                <p><span>img_20240812323424</span><button class="btn_file_elm"></button></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <textarea name="" id="" placeholder="내용을 입력하세요."></textarea>
+                                </form>
+                            </div>
+
+                            <button class="admit">등록하기</button>
+                        </div>
+                    </div>
+                </article>
+            </aside>
+            <aside class="bottom_aside forfltr">
+                <ul class="needflex">
+                    <li>
+                        <a href="">
+                            <span class="chck_cnfrm"></span>
+                            ASF 발생지점
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="chck_cnfrm"></span>
+                            기피제
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="chck_cnfrm"></span>
+                            경광등
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="chck_cnfrm"></span>
+                            축산농가
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="chck_cnfrm"></span>
+                            권역
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="chck_cnfrm"></span>
+                            울타리
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="chck_cnfrm"></span>
+                            태양광 울타리
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="chck_cnfrm"></span>
+                            철도 울타리
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="chck_cnfrm"></span>
+                            야생동물방지 울타리
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="chck_cnfrm"></span>
+                            기타 울타리
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="chck_cnfrm"></span>
+                            교량
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="chck_cnfrm"></span>
+                            낙석방지망
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="chck_cnfrm"></span>
+                            웅벽
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="chck_cnfrm"></span>
+                            2차울타리
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="chck_cnfrm"></span>
+                            광역울타리
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="chck_cnfrm"></span>
+                            지역농가차단울타리
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="chck_cnfrm"></span>
+                            문
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <!--   <footer>
       <div class="container">
         <h1><a href="#"><img src="../common/images/footer_logo.png" alt="푸터 로고"></a> </h1>
         <p>Copyright © Environmental Preservation Association All rights reserved.</p>
       </div>
     </footer> -->
-    </div>
+        </div>
 
-    <script src="../common/js/jquery-3.6.2.min.js"></script>
-    <script src="../common/js/publish.js"></script>
-  </body>
+        <script src="../common/js/jquery-3.6.2.min.js"></script>
+        <script src="../common/js/publish.js"></script>
+    </body>
 </html>
