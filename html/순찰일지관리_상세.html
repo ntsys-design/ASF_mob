@@ -435,400 +435,93 @@
           <!-- 관리 체크 목록 -->
           <div class="tab_con ptr_log nmt" id="tab2_content">
             <div class="container">
-              <table border="0">
+              <table border="0" class="dial_mng">
                 <colgroup>
-                  <col width="12.5%" />
-                  <col width="31.5%" />
-                  <col width="28%;" />
-                  <col width="28%" />
+                  <col width="33.3%" />
+                  <col width="33.4%" />
+                  <col width="33.3%" />
                 </colgroup>
-                <thead>
-                  <tr>
-                    <th colspan="2" class="th_1">점검 항목</th>
-                    <th>점검 결과</th>
-                    <th>조치 여부</th>
-                  </tr>
-                </thead>
                 <tbody>
-                  <tr>
-                    <th colspan="4" class="check_num">1. 출입문 점검</th>
+                  <tr class="tr_hdr">
+                    <th colspan="3">훼손 신고 건수</th>
                   </tr>
                   <tr>
-                    <td colspan="2" class="bd_r vtc_m">출입문 점검 총 개수</td>
+                    <th>출입문</th>
                     <td>
-                      <div class="tb_input_wrap fww">
-                        <label for="count01" class="hide"></label>
-                        <input
-                          type="text"
-                          name="count"
-                          id="count01"
-                          placeholder=""
-                          value="21"
-                          readonly
-                        /><span>개</span>
-                      </div>
-                    </td>
-                    <td class="hide">없음</td>
-                  </tr>
-                  <tr>
-                    <td colspan="2" class="bd_r">출입문 열려 있는 경우</td>
-                    <td class="hide">없음</td>
-                    <td>
-                      <div class="tb_input_wrap fww">
-                        <label for="count02">문닫음</label>
-                        <input
-                          type="text"
-                          name="count"
-                          id="count02"
-                          placeholder=""
-                          value="24"
-                          readonly
-                        /><span>건</span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td colspan="2" class="bd_r">
-                      마을입구 출입문 열림장치 고정
-                    </td>
-                    <td class="hide">없음</td>
-                    <td>
-                      <div class="tb_input_wrap fww">
-                        <label for="count03">고정 해제</label>
-                        <input
-                          type="text"
-                          name="count"
-                          id="count03"
-                          placeholder=""
-                          value="24"
-                          readonly
-                        /><span>건</span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td colspan="2" class="bd_r">
-                      출입문 잠금장치 설치인 경우
-                    </td>
-                    <td class="hide">없음</td>
-                    <td>
-                      <div class="tb_input_wrap fww">
-                        <label for="count04">장치 해제</label>
-                        <input
-                          type="text"
-                          name="count"
-                          id="count04"
-                          placeholder=""
-                          value="24"
-                          readonly
-                        /><span>건</span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th colspan="4" class="check_num">
-                      2. 울타리 능형망 훼손 여부
-                    </th>
-                  </tr>
-                  <tr>
-                    <td rowspan="2" class="">훼손시 훼손 정도</td>
-                    <td class="bd_r">
-                      <div class="tb_input_wrap fww">
-                        <label for="count05" class="bl_lb">1M 이하</label>
-                        <input
-                          type="text"
-                          name="count"
-                          id="count05"
-                          placeholder=""
-                          value="10"
-                          readonly
-                        />
-                      </div>
-                    </td>
-                    <td>
-                      <div class="tb_input_wrap fww">
-                        <label for="count06">인위적</label>
-                        <input
-                          type="text"
-                          name="count"
-                          id="count06"
-                          placeholder=""
-                          value="24"
-                          readonly
-                        />
-                      </div>
-                    </td>
-                    <td>
-                      <div class="tb_input_wrap fww">
-                        <label for="count07">자체 수리</label>
-                        <input
-                          type="text"
-                          name="count"
-                          id="count07"
-                          placeholder=""
-                          value="24"
-                          readonly
-                        />
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="bd_r">
-                      <div class="tb_input_wrap fww">
-                        <label for="count501" class="bl_lb">1M 초과</label>
-                        <input
-                          type="text"
-                          name="count"
-                          id="count501"
-                          placeholder=""
-                          value="10"
-                          readonly
-                        />
-                      </div>
-                    </td>
-                    <td>
-                      <div class="tb_input_wrap fww">
-                        <label for="count08">자연적</label>
-                        <input
-                          type="text"
-                          name="count"
-                          id="count08"
-                          placeholder=""
-                          value="24"
-                          readonly
-                        />
-                      </div>
-                    </td>
-                    <td>
-                      <div class="tb_input_wrap fww">
-                        <label for="count09">업체 수리</label>
-                        <input
-                          type="text"
-                          name="count"
-                          id="count09"
-                          placeholder=""
-                          value="24"
-                          readonly
-                        />
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th colspan="4" class="check_num">3. 울타리 쓰러짐 여부</th>
-                  </tr>
-                  <tr>
-                    <td rowspan="2" class="">쓰러진 울타리 길이</td>
-                    <td class="bd_r">
-                      <div class="tb_input_wrap fww">
-                        <label for="count10" class="bl_lb">30M 이하</label>
-                        <input
-                          type="text"
-                          name="count"
-                          id="count10"
-                          placeholder=""
-                          value="10"
-                          readonly
-                        /><span>건</span>
-                      </div>
-                    </td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="bd_r">
-                      <div class="tb_input_wrap fww">
-                        <label for="count11" class="bl_lb">30M 초과</label>
-                        <input
-                          type="text"
-                          name="count"
-                          id="count11"
-                          placeholder=""
-                          value="10"
-                          readonly
-                        /><span class="cl_trsprt">건</span>
-                      </div>
-                    </td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td rowspan="2" colspan="2" class="bd_r">
-                      울타리 수직강관 훼손여부<br />(찌그러짐, 파손)
-                    </td>
-                    <td>
-                      <div class="tb_input_wrap fww">
-                        <label for="count12">유지 가능</label>
-                        <input
-                          type="text"
-                          name="count"
-                          id="count12"
-                          placeholder=""
-                          value="24"
-                          readonly
-                        />
+                      <div class="infowrap">
+                        <span>0</span>건
                       </div>
                     </td>
                     <td></td>
                   </tr>
                   <tr>
+                    <th>울타리</th>
                     <td>
-                      <div class="tb_input_wrap fww">
-                        <label for="count13">불가능</label>
-                        <input
-                          type="text"
-                          name="count"
-                          id="count13"
-                          placeholder=""
-                          value="24"
-                          readonly
-                        />
+                      <div class="infowrap">
+                        <span>0</span>건
                       </div>
                     </td>
                     <td></td>
                   </tr>
+                  <tr class="tr_hdr">
+                    <th colspan="3">경광등 신고 건수</th>
+                  </tr>
                   <tr>
-                    <td rowspan="3" colspan="2" class="bd_r">
-                      울타리 쓰러진 원인
-                    </td>
+                    <th>출입문</th>
                     <td>
-                      <div class="tb_input_wrap fww">
-                        <label for="count14">지반 약화</label>
-                        <input
-                          type="text"
-                          name="count"
-                          id="count14"
-                          placeholder=""
-                          value="24"
-                          readonly
-                        />
+                      <div class="infowrap">
+                        <span>0</span>건
                       </div>
                     </td>
                     <td></td>
                   </tr>
                   <tr>
+                    <th>울타리</th>
                     <td>
-                      <div class="tb_input_wrap fww">
-                        <label for="count15">불균형</label>
-                        <input
-                          type="text"
-                          name="count"
-                          id="count15"
-                          placeholder=""
-                          value="24"
-                          readonly
-                        />
+                      <div class="infowrap">
+                        <span>0</span>건
                       </div>
                     </td>
                     <td></td>
                   </tr>
                   <tr>
+                    <th>지형지물</th>
                     <td>
-                      <div class="tb_input_wrap fww">
-                        <label for="count16">사고</label>
-                        <input
-                          type="text"
-                          name="count"
-                          id="count16"
-                          placeholder=""
-                          value="24"
-                          readonly
-                        />
+                      <div class="infowrap">
+                        <span>0</span>건
                       </div>
                     </td>
                     <td></td>
                   </tr>
-                  <tr>
-                    <th colspan="4" class="check_num">4.취약구간 점검</th>
+                  <tr class="tr_hdr">
+                    <th colspan="3">기피제 신고 건수</th>
                   </tr>
                   <tr>
-                    <td rowspan="2" colspan="2" class="bd_r">
-                      울타리 시점﹡종점 점검
-                    </td>
-                    <td rowspan="2"></td>
+                    <th>출입문</th>
                     <td>
-                      <div class="tb_input_wrap fww">
-                        <label for="count17">경광등 설치</label>
-                        <input
-                          type="text"
-                          name="count"
-                          id="count17"
-                          placeholder=""
-                          value="24"
-                          readonly
-                        /><span>건</span>
+                      <div class="infowrap">
+                        <span>0</span>건
                       </div>
                     </td>
+                    <td></td>
                   </tr>
                   <tr>
+                    <th>울타리</th>
                     <td>
-                      <div class="tb_input_wrap fww">
-                        <label for="count18">기피제 설치</label>
-                        <input
-                          type="text"
-                          name="count"
-                          id="count18"
-                          placeholder=""
-                          value="24"
-                          readonly
-                        /><span>건</span>
+                      <div class="infowrap">
+                        <span>0</span>건
                       </div>
                     </td>
-                  </tr>
-                  <tr>
-                    <td colspan="2" class="bd_r">지형지물과 연결부분 점검</td>
-                    <td>이상 발생시 유선 보고</td>
                     <td></td>
                   </tr>
                   <tr>
-                    <td colspan="2" class="bd_r">배수로 점검</td>
-                    <td>이상 발생시 유선 보고</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th colspan="4" class="check_num">5.울타리 설치 현장</th>
-                  </tr>
-                  <tr>
-                    <td colspan="2" class="bd_r">연약 지반 부분 여부</td>
-                    <td>이상 발생시 유선 보고</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td colspan="2" class="bd_r">낙석 발생 여부</td>
-                    <td>이상 발생시 유선 보고</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td colspan="2" class="bd_r">침수 여부</td>
-                    <td>이상 발생시 유선 보고</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td colspan="2" class="bd_r vtc_t">특이사항</td>
-                    <td colspan="2">
-                      <div class="tb_input_wrap">
-                        <label for="cont03" class="hide">내용</label>
-                        <textarea
-                          id="cont03"
-                          name="cont"
-                          placeholder=""
-                          readonly
-                        ></textarea>
+                    <th>지형지물</th>
+                    <td>
+                      <div class="infowrap">
+                        <span>0</span>건
                       </div>
                     </td>
-                  </tr>
-                  <tr>
-                    <td colspan="2" class="bd_r vtc_t">조치사항</td>
-                    <td colspan="2">
-                      <div class="tb_input_wrap">
-                        <label for="cont04" class="hide">내용</label
-                        ><textarea
-                          id="cont04"
-                          name="cont"
-                          placeholder=""
-                          readonly
-                        ></textarea>
-                      </div>
-                    </td>
+                    <td></td>
                   </tr>
                 </tbody>
               </table>

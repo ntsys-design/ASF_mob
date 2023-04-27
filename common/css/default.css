@@ -2793,3 +2793,46 @@ header .container::after {
 .fltrwrap {
     z-index: 1;
 }
+
+
+.dial_mng tbody tr th {
+    padding: 10px 5px;
+    vertical-align: middle;
+}
+.dial_mng .tr_hdr {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+}
+.dial_mng tbody tr {
+    border: unset;
+    padding: 5px;
+    height: 57px;
+}
+.dial_mng .tr_hdr th {
+    padding: 10px;
+    background: #f7f7f8;
+    border-top: 2px solid #181818;
+    border-bottom: 1px solid #181818;
+}
+.dial_mng .tr_hdr th::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: #000;
+    display: inline-block;
+    transform: translateY(-50%);
+    margin-right: 10px;
+}
+
+.dial_mng .infowrap span {
+    display: inline-block;
+    width: calc(100% - 30px);
+    padding: 5px 10px;
+    text-align: right;
+}
+.dial_mng .infowrap.inbox span {
+    border: 1px solid #999;
+    margin-right: 10px;
+}
