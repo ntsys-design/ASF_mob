@@ -2681,7 +2681,7 @@ header .container::after {
 .searchwrap .search_input {
     width: 100%;
     border-radius: 4px;
-    background: #f2f3f5;
+    background: #fff;
     height: 40px;
     position: relative;
     display: flex;
@@ -2835,4 +2835,18 @@ header .container::after {
 .dial_mng .infowrap.inbox span {
     border: 1px solid #999;
     margin-right: 10px;
+}
+
+.fclt_chk li {
+    display: flex;
+    margin-bottom: 6px;
+    align-items: center;
+}
+.fclt_chk li:last-child {
+    margin-bottom: 0;
+}
+.fclt_chk li span {
+    display: block;
+    flex-shrink: 0;
+    color: #55626f;
 }
